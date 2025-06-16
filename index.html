@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>이예진 – 백엔드 개발자</title>
+  <meta name="theme-color" content="#3a7bd5" />
+  <style>
+    @font-face {
+      font-family: 'Pretendard';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Pretendard'), url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2');
+    }
+
+    body {
+      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fb;
+      color: #111;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background: linear-gradient(transparent 60%, #ffe066 60%); /* 연노랑 형광펜 느낌 */
+      display: inline;
+    }
+
+    .container {
+      max-width: 768px;
+      padding: 3rem 1.5rem;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 5rem;      /* 28px */
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      word-break: keep-all;
+      letter-spacing: -0.02em; /* 시각적 정제 효과 */
+    }
+
+    .big-paragraph {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      margin-top: 4rem;
+      font-size: 2.2rem;
+      font-weight: 800;
+    }
+
+    h3 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    h4 {
+      margin-top: 1.7rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    h5 {
+      margin: 0.5rem 0;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .period-mark::after {
+      content: ".";
+      color: #3a7bd5;
+      font-weight: bold;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .row-left {
+      width: 30%;
+      padding-right: 1rem;
+      box-sizing: border-box;
+    }
+
+    .row-right {
+      width: 70%;
+      box-sizing: border-box;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: #3a7bd5;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #2a5cab;
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 6rem;
+    }
+
+    @media (max-width: 768px) {
+      .row-left, .row-right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1>
+        <span class="highlight">반갑습니다,</span><br>
+        <span class="highlight">저는 이예진입니다</span><span class="period-mark"></span>
+      </h1>
+      <p class="big-paragraph">
+        Java와 Node.js 서버 개발, Kotlin 기반 Android 앱 개발을 모두 경험했으며,<br>
+        사이드 프로젝트를 통해 안정적인 시스템 구성 역량을 갖추었습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>Work Experience<span class="period-mark"></span></h2>
+
+      <div class="row">
+        <div class="row-left">
+          <h3>유넷시스템즈</h3>
+          <span class="role">Backend Developer</span><br>
+          <span>2024.10 – 현재</span>
+        </div>
+        <div class="row-right">
+          <div class="project">
+            <h4><span class="highlight">PKI 백엔드 유지보수 및 기능 고도화</span><span class="period-mark"></span></h4>
+            <h5>Description<span class="period-mark"></span></h5>
+            <p>공공기관 대상 보안 인증 시스템(PKI)을 유지보수하고, Spring Boot로의 마이그레이션을 통해 유지관리성과 성능을 개선했습니다.</p>
+            <h5>My Contributions<span class="period-mark"></span></h5>
+            <ul>
+              <li>기존 JAVA 시스템을 Spring Boot 기반으로 구조 개선</li>
+              <li>관리자 UI 및 백오피스 기능 리팩토링</li>
+              <li>장애 로그 분석 및 긴급 대응, 사용자 피드백 반영</li>
+            </ul>
+            <h5>Tech Stack<span class="period-mark"></span></h5>
+            <p>Java, Spring Boot, MySQL, Apache, JavaScript</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-left">
+          <h3>마리오아울렛</h3>
+          <span class="role">Backend & Frontend</span><br>
+          <span>2024.05 – 2024.09</span>
+        </div>
+        <div class="row-right">
+          <div class="project">
+            <h4><span class="highlight">OMS 시스템 API 및 UI 개발</span><span class="period-mark"></span></h4>
+            <h5>Description<span class="period-mark"></span></h5>
+            <p>주문관리 시스템(OMS) 개발 프로젝트에서 API 설계와 UI 개선을 통해 업무 효율을 향상시켰습니다.</p>
+            <h5>My Contributions<span class="period-mark"></span></h5>
+            <ul>
+              <li>Flask 기반 주문 및 배송 관련 API 구현</li>
+              <li>HTML/CSS 및 JavaScript 기반 관리자 UI 개발</li>
+              <li>데이터 스케줄링 자동화 및 로그 알림 기능 개발</li>
+            </ul>
+            <h5>Tech Stack<span class="period-mark"></span></h5>
+            <p>Flask, JavaScript, HTML, MySQL, Linux</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-left">
+          <h3>니아랩스</h3>
+          <span class="role">Backend & Frontend</span><br>
+          <span>2022.06 – 2023.02</span>
+        </div>
+        <div class="row-right">
+          <div class="project">
+            <h4><span class="highlight">스포츠 예약 시스템 및 관리자 페이지</span><span class="period-mark"></span></h4>
+            <h5>Description<span class="period-mark"></span></h5>
+            <p>스포츠 시설 예약 시스템 및 관리자 대시보드를 Laravel 기반으로 구축하고, ETH 기반 리워드 시스템을 연동했습니다.</p>
+            <h5>My Contributions<span class="period-mark"></span></h5>
+            <ul>
+              <li>예약/캘린더/회원 관리 기능 백엔드 개발</li>
+              <li>관리자 페이지 UI 및 기능 구현</li>
+              <li>리워드 토큰 지급 시스템 설계 및 블록체인 연동</li>
+            </ul>
+            <h5>Tech Stack<span class="period-mark"></span></h5>
+            <p>Laravel, PHP, MySQL, JavaScript, Ethereum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Side Projects<span class="period-mark"></span></h2>
+
+      <div class="row">
+        <div class="row-left">
+          <h3>와글와글</h3>
+          <span class="role">Chat App</span><br>
+          <span>2024 ~ 진행중</span>
+        </div>
+        <div class="row-right">
+          <div class="project">
+            <h4><span class="highlight">실시간 채팅 앱</span><span class="period-mark"></span></h4>
+            <h5>Description<span class="period-mark"></span></h5>
+            <p>Android 앱과 Node.js 서버 간 실시간 통신을 기반으로 한 커뮤니케이션 앱입니다.</p>
+            <h5>What I did<span class="period-mark"></span></h5>
+            <ul>
+              <li>회원가입 및 로그인 기능을 포함한 Android 앱 개발 (Kotlin)</li>
+              <li>Node.js 기반 WebSocket 서버 구축 및 실시간 채팅 처리</li>
+              <li>사용자 간 메시지 전송/수신 기능 및 채팅방 UI 구현</li>
+            </ul>
+            <h5>Tech Stack<span class="period-mark"></span></h5>
+            <p>Kotlin, Node.js, WebSocket, Express, AWS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-left">
+          <h3>CLOOK</h3>
+          <span class="role">Weather Visualization</span><br>
+          <span>2022.09 ~ 2023.02</span>
+        </div>
+        <div class="row-right">
+          <div class="project">
+            <h4><span class="highlight">날씨 시각화 웹 사이트</span><span class="period-mark"></span></h4>
+            <h5>Description<span class="period-mark"></span></h5>
+            <p>기상청 API를 활용하여 날씨 데이터를 시각화하고, Oracle Cloud 환경에 배포한 웹 애플리케이션입니다.</p>
+            <h5>What I did<span class="period-mark"></span></h5>
+            <ul>
+              <li>Spring Boot 백엔드 서버 구축 및 API 연동</li>
+              <li>React 프론트엔드 개발 및 날씨 데이터 시각화</li>
+              <li>Oracle Cloud에 전체 시스템 배포</li>
+            </ul>
+            <h5>Tech Stack<span class="period-mark"></span></h5>
+            <p>Spring Boot, React, Oracle Cloud, 기상청 API</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education & Certification<span class="period-mark"></span></h2>
+      <ul>
+        <li>JSL 인재개발원 – 하이브리드 SW 과정 (2021.06 ~ 2022.02)</li>
+        <li>순천향대학교 – 경찰행정학과 (2014.03 ~ 2019.02)</li>
+        <li>COS PRO JAVA 2급, 컴퓨터활용능력 2급</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact<span class="period-mark"></span></h2>
+      <ul>
+        <li><a href="mailto:youremail@example.com">이메일</a></li>
+        <li><a href="https://github.com/Jin5540" target="_blank">GitHub</a></li>
+        <li><a href="https://dev.to/yesjin" target="_blank">Blog</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
