@@ -43,6 +43,7 @@
       margin-bottom: 1.5rem;
       word-break: keep-all;
       letter-spacing: -0.02em; /* 시각적 정제 효과 */
+      z-index: 10;
     }
 
     .big-paragraph {
@@ -127,14 +128,45 @@
         width: 100%;
       }
     }
+
+    .brush-container {
+      position: relative;
+      width: 500px;
+      height: 200px;
+      margin: auto;
+      z-index: 0;
+    }
+
+    .brush-mask {
+      position: absolute;
+      inset: 0;
+      background: url('b.jpg') center/cover no-repeat;
+      -webkit-mask-image: url('11441911.png');
+      -webkit-mask-size: cover;
+      -webkit-mask-repeat: no-repeat;
+      mask-image: url('11441911.png');
+      mask-size: cover;
+      mask-repeat: no-repeat;
+      z-index: 0;
+    }
+
+    .brush-heading {
+      position: relative;
+      margin-top: -160px; /* 위쪽으로 땡겨서 겹치게 */
+      z-index: 10; /* 이미지보다 위로 */
+    }
+
   </style>
 </head>
 <body>
   <div class="container">
     <section>
-      <h1>
-        <span class="highlight">반갑습니다,</span><br>
-        <span class="highlight">저는 이예진입니다</span><span class="period-mark"></span>
+      <div class="brush-container">
+        <div class="brush-mask"></div>
+      </div>
+      <h1 class="brush-heading">
+        <span class="image-text">반갑습니다,</span><br>
+        <span class="image-text">저는 이예진입니다</span><span class="period-mark"></span>
       </h1>
       <p class="big-paragraph">
         Java와 Node.js 서버 개발, Kotlin 기반 Android 앱까지 폭넓게 경험했습니다.<br>
