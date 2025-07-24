@@ -8,30 +8,31 @@
   <meta name="theme-color" content="#3a7bd5" />
   <style>
     @font-face {
-      font-family: 'Pretendard';
+      font-family: 'LINESeedKR';
+      font-style: normal;
+      font-weight: 700;
+      src: url('/font/LINE_Seed_Sans_KR/LINE_SeedKR_2023.09.06/Web/woff2/LINESeedKR-Bd.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'LINESeedKR';
       font-style: normal;
       font-weight: 400;
-      src: local('Pretendard'), url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2');
+      src: url('/font/LINE_Seed_Sans_KR/LINE_SeedKR_2023.09.06/Web/woff2/LINESeedKR-Rg.woff2') format('woff2');
     }
 
     body {
-      font-family: 'Pretendard', sans-serif;
+      font-family: 'LINESeedKR', sans-serif;
       margin: 0;
       padding: 0;
       background: #f8f9fb;
-      color: #111;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.6;
+      color: #2d2d2d;
     }
-
-    .highlight {
-      background: linear-gradient(transparent 60%, #ffe066 60%); /* 연노랑 형광펜 느낌 */
-      display: inline;
-    }
-
     .container {
-      max-width: 768px;
+      max-width: 868px;
       padding: 3rem 1.5rem;
       margin: auto;
     }
@@ -48,8 +49,9 @@
 
     .big-paragraph {
       font-size: 1.1rem;
-      margin-top: 1rem;
+      margin-top: -2rem;
       margin-bottom: 2rem;
+      text-align: right;
     }
 
     h2 {
@@ -75,12 +77,6 @@
       margin: 0.5rem 0;
       font-weight: 600;
       font-size: 1rem;
-    }
-
-    .period-mark::after {
-      content: ".";
-      color: #3a7bd5;
-      font-weight: bold;
     }
 
     .row {
@@ -120,7 +116,7 @@
     }
 
     section {
-      margin-bottom: 6rem;
+      margin-bottom: 3rem;
     }
 
     @media (max-width: 768px) {
@@ -128,60 +124,88 @@
         width: 100%;
       }
     }
-
     .brush-container {
       position: relative;
-      width: 500px;
-      height: 200px;
+      width: 900px;
+      height: 300px;
       margin: auto;
-      z-index: 0;
-    }
-
-    .brush-mask {
-      position: absolute;
-      inset: 0;
-      background: url('b.jpg') center/cover no-repeat;
-      -webkit-mask-image: url('11441911.png');
-      -webkit-mask-size: cover;
-      -webkit-mask-repeat: no-repeat;
-      mask-image: url('11441911.png');
-      mask-size: cover;
-      mask-repeat: no-repeat;
-      z-index: 0;
+      margin-left: -100px;
+      background: url('2.png') center/cover no-repeat;
+      z-index: 1;
     }
 
     .brush-heading {
       position: relative;
-      margin-top: -160px; /* 위쪽으로 땡겨서 겹치게 */
-      z-index: 10; /* 이미지보다 위로 */
-    }
-
-    .with-blend {
-      mix-blend-mode: difference;  /* 또는 multiply, overlay 등 실험 가능 */
-      color: white;                /* 밝은 색으로 지정, 그림과 차이 생기도록 */
-      position: relative;
+      margin-top: -100px;
       z-index: 10;
+      text-align: right;
     }
 
+    .blue {
+      font-weight: bold;
+      position: relative;
+      color: #1f2f56; /* 진한 남색 텍스트 */
+    }
+
+    .highlight {
+      font-weight: 800;
+      background: linear-gradient(to top, #0264bc 40%, transparent 40%);
+    }
+
+    .floating-side-art-wrapper {
+        position: fixed;
+        top: 87%;         /* 원하는 위치로 조절 */
+        right: 20px;
+        width: 80px;       /* 이미지와 동일하거나 적당히 맞춰줌 */
+        z-index: 9999;
+        pointer-events: none;
+      }
+
+      .floating-side-art {
+        width: 100%;
+        display: block;
+      }
+
+      .floating-text {
+        position: absolute;
+        top: 50%;           /* 중앙 정렬용 */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-shadow: 0 0 4px rgba(0,0,0,0.5); /* 가독성 향상 */
+        pointer-events: none;
+      }
+
+      .corner-triangle {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 80px;        /* 삼각형 크기 조절 가능 */
+        height: 80px;
+        background: linear-gradient(135deg, white 50%, transparent 50%);
+        background-image: url('6.png');
+        background-size: cover;
+        background-position: -20% 50%;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        z-index: 100;
+      }
+
+      .triangle-label {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        color: white;
+        font-size: 0.7rem;
+        font-weight: bold;
+      }
 
   </style>
 </head>
 <body>
   <div class="container">
     <section>
-      <div class="brush-container">
-        <div class="brush-mask"></div>
-      </div>
-      <h1 class="brush-heading with-blend">
-        <span class="image-text">반갑습니다,</span><br>
-        <span class="image-text">저는 이예진입니다</span><span class="period-mark"></span>
-      </h1>
-      <p class="big-paragraph">
-        Java와 Node.js 서버 개발, Kotlin 기반 Android 앱까지 폭넓게 경험했습니다.<br>
-        사이드 프로젝트를 통해 안정적인 시스템 구조를 직접 설계하고 운영해 왔습니다.<br>
-        쉽게 만들기보다, 오래 쓰이게 만들고 싶습니다.<br>
-        저는 고심을 멈추지 않는 개발자입니다.
-      </p>
+      <div class="brush-container"></div>
     </section>
 
     <section>
@@ -323,6 +347,9 @@
         <li><a href="https://dev.to/yesjin" target="_blank">Blog</a></li>
       </ul>
     </section>
+  </div>
+  <div class="corner-triangle">
+    <span class="triangle-label">이예진</span>
   </div>
 </body>
 </html>
