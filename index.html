@@ -176,30 +176,6 @@
         text-shadow: 0 0 4px rgba(0,0,0,0.5); /* 가독성 향상 */
         pointer-events: none;
       }
-
-      .corner-triangle {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 80px;        /* 삼각형 크기 조절 가능 */
-        height: 80px;
-        background: linear-gradient(135deg, white 50%, transparent 50%);
-        background-image: url('6.png');
-        background-size: cover;
-        background-position: -20% 50%;
-        clip-path: polygon(100% 0, 100% 100%, 0 100%);
-        z-index: 100;
-      }
-
-      .triangle-label {
-        position: absolute;
-        bottom: 5px;
-        right: 10px;
-        color: white;
-        font-size: 0.7rem;
-        font-weight: bold;
-      }
-
   </style>
 </head>
 <body>
@@ -347,9 +323,6 @@
         <li><a href="https://dev.to/yesjin" target="_blank">Blog</a></li>
       </ul>
     </section>
-  </div>
-  <div class="corner-triangle">
-    <span class="triangle-label">이예진</span>
   </div>
 </body>
 </html>
