@@ -46,6 +46,8 @@
     .avatar img{width:100%; height:100%; object-fit:cover}
     .about p{margin:8px 0}
     .pill{display:inline-block; padding:2px 8px; border-radius:6px; background:var(--pill); color:var(--pill-text); font-weight:600}
+    .about-text {text-align: center;max-width: 1200px; margin: 0 auto;}
+    .about-text p { margin: 10px 0;}
 
     /* Section title */
     .section-title{font-size:32px; margin:36px 0 16px; text-align:center; font-weight:700}
@@ -85,25 +87,8 @@
     <!-- HEADER -->
     <header class="topbar" aria-label="Header">
       <div class="title">
-        <h1>이예진</h1>
-        <div class="subtitle">완성도를 더해가는 개발자</div>
-      </div>
-      <div class="contact">
-        <div class="icons" aria-label="social links">
-          <a class="icon" href="https://github.com/Jin5540" aria-label="GitHub">
-            <!-- GitHub SVG -->
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77 5.44 5.44 0 0 0 3.5 8.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-          </a>
-          <a class="icon" href="https://www.linkedin.com/in/yejin-lee-0338192ba/" aria-label="LinkedIn">
-            <!-- LinkedIn SVG -->
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-          </a>
-          <a class="icon" href="https://dev.to/sunj" aria-label="Blog">
-            <!-- Globe SVG -->
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-          </a>
-        </div>
-        <div><strong>Email:</strong> <a href="mailto:c20950308@gmail.com">c20950308@gmail.com</a></div>
+        <h1>사건은 끝, 이제는 로그와 버그다.</h1>
+        <div class="subtitle">이예진</div>
       </div>
     </header>
 
@@ -113,16 +98,11 @@
     <!-- ABOUT -->
     <section class="about">
       <h2>About Me</h2>
-      <div class="grid">
-        <div class="avatar">
-          <img alt="avatar" src="mindeulreya@naver com (0).jpg" />
-        </div>
-        <div>
-          <p>Java, Spring Boot, Node.js, Flask, Laravel 등 다양한 백엔드 프레임워크와 프론트엔드 개발 경험을 보유하고 있습니다.</p>
-          <p>PKI 보안 인증 시스템, OMS 주문 관리 시스템, 스포츠 예약 시스템 등 엔터프라이즈 및 스타트업 프로젝트를 수행했습니다.</p>
-          <p>실시간 채팅 앱, 날씨 시각화 웹사이트 등 사이드 프로젝트를 통해 <span class="pill">서비스 설계</span>와 <span class="pill">배포 경험</span>을 쌓았습니다.</p>
-          <p><span class="pill">팀 협업</span>과 <span class="pill">코드 품질</span>을 중시하며, 새로운 기술을 빠르게 학습하고 적용하는 것을 즐깁니다.</p>
-        </div>
+      <div class="about-text">
+        <p>특정 언어나 프레임워크에 국한되지 않고, 다양한 환경에서도 <span class="pill">빠른 적응력</span>과 <span class="pill">학습 능력</span>을 발휘해 왔습니다.</p>
+        <p>무엇보다도 <span class="pill">버그를 빠르게 파악하고 안정화·정상화</span>하는 데 강점을 가지고 있습니다.</p>
+        <p>탄탄한 기본기를 바탕으로, 서비스 장애를 신속히 해결하며 <span class="pill">안정적인 운영</span>을 이끌어 왔습니다.</p>
+        <p>지속적인 <span class="pill">성장 욕구</span>와 <span class="pill">책임감</span>으로 팀과 서비스에 기여하는 개발자로 나아가고 있습니다.</p>
       </div>
     </section>
 
@@ -142,7 +122,6 @@
           <div class="summary">사기업 대상 보안 인증 시스템(PKI) 유지보수 및 Spring Boot 마이그레이션</div>
           <ul>
             <li>기존 Java 시스템을 Spring Boot 기반으로 구조 개선</li>
-            <li>Webpack 도입으로 프론트엔드 코드 관리 효율성 향상</li>
             <li>장애 로그 분석 및 긴급 대응, 사용자 피드백 반영</li>
           </ul>
           <p><strong>Tech Stack:</strong> Java, Spring Boot, MySQL, Apache, JavaScript</p>
@@ -159,7 +138,6 @@
           <div class="summary">OMS 주문관리 시스템 API 및 UI 개발</div>
           <ul>
             <li>Flask 기반 주문 및 배송 API 구현</li>
-            <li>HTML/CSS/JS 기반 관리자 UI 개발</li>
             <li>데이터 스케줄링 자동화 및 로그 알림 기능 개발</li>
           </ul>
           <p><strong>Tech Stack:</strong> Flask, JavaScript, HTML, MySQL, Linux</p>
@@ -176,7 +154,7 @@
           <div class="summary">스포츠 예약 시스템 및 관리자 페이지 개발</div>
           <ul>
             <li>Laravel 기반 예약/회원 관리 백엔드 개발</li>
-            <li>관리자 페이지 UI 및 기능 구현</li>
+            <li>관리자 페이지 기능 구현</li>
             <li>ETH 기반 리워드 토큰 지급 시스템 설계</li>
           </ul>
           <p><strong>Tech Stack:</strong> Laravel, PHP, MySQL, JavaScript, Ethereum</p>
@@ -217,40 +195,10 @@
           <div class="summary">날씨 시각화 웹사이트</div>
           <ul>
             <li>Spring Boot 서버 구축 및 기상청 API 연동</li>
-            <li>React 프론트엔드 개발</li>
             <li>Oracle Cloud에 배포</li>
           </ul>
-          <p><strong>Tech Stack:</strong> Spring Boot, React, Oracle Cloud, 기상청 API</p>
+          <p><strong>Tech Stack:</strong> Spring Boot, Oracle Cloud, 기상청 API</p>
         </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2 class="section-title">Skills</h2>
-
-      <div style="text-align:left; line-height:1.8; max-width:1000px; margin:0 auto;">
-        <p style="margin:10px 0;">
-          <strong>Backend</strong><br>
-          Java, Spring Boot, Flask, Laravel, PHP, Node.js (Express, WebSocket), Kotlin (Android), API 설계 및 서버 마이그레이션 경험
-        </p>
-
-        <p style="margin:10px 0;">
-          <strong>Database & Cloud</strong><br>
-          MySQL, Oracle, AWS (EC2, S3, WebSocket, 배포), Oracle Cloud 배포 경험
-        </p>
-
-        <p style="margin:10px 0;">
-          <strong>Frontend</strong><br>
-          HTML, CSS, JavaScript, React (시각화 UI), Webpack 적용 경험
-        </p>
-
-        <p style="margin:10px 0;">
-          <strong>Tools & Others</strong><br>
-          Git/GitHub, Linux, PKI 보안 인증 시스템
-        </p>
       </div>
     </section>
 
@@ -275,6 +223,16 @@
         </ul>
       </article>
     </section>
+
+    <div class="contact">
+      <div class="icons" aria-label="social links">
+        <a class="icon" href="https://www.linkedin.com/in/yejin-lee-0338192ba/" aria-label="LinkedIn">
+          <!-- LinkedIn SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </div>
+      <div><strong>Email:</strong> <a href="mailto:c20950308@gmail.com">c20950308@gmail.com</a></div>
+    </div>
 
     <footer>
       © 2025 이예진. All rights reserved.
