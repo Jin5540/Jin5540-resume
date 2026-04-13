@@ -79,20 +79,17 @@
       width: 30mm;
       height: 40mm;
       border: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       margin: 0 auto;
-      font-size: 8.5px;
-      line-height: 1.35;
-      padding: 3px;
+      padding: 0;
+      overflow: hidden;
+      background: #f5f5f5;
     }
-    .photo-box .hint {
-      margin-top: 4px;
-      font-size: 7.5px;
-      text-align: left;
-      align-self: stretch;
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
     }
     .seal {
       text-align: center;
@@ -177,9 +174,8 @@
         <th>ふりがな</th>
         <td colspan="4">い・いぇじん</td>
         <td rowspan="6" class="photo-cell">
-          <div class="photo-box" role="img" aria-label="写真貼付位置">
-            <div>写真を貼る位置</div>
-            <div class="hint">縦4cm×横3cmの写真を使用してください。</div>
+          <div class="photo-box">
+            <img src="mindeulreya%40naver%20com%20(0).jpg" alt="証明写真" width="113" height="151" />
           </div>
         </td>
       </tr>
@@ -238,7 +234,6 @@
       <tr><td>2023</td><td>02</td><td>ニアラボ　退社</td></tr>
       <tr><td>2023</td><td>03</td><td>日本　ワーキングホリデー滞在</td></tr>
       <tr><td>2023</td><td>10</td><td>日本　ワーキングホリデー　終了</td></tr>
-      <tr><td>2024</td><td>05</td><td>サイドプロジェクト：ワグルワグル（Android・サーバー）着手</td></tr>
       <tr><td>2024</td><td>10</td><td>ユーネットシステムズ　入社（バックエンド開発者）</td></tr>
       <tr><td>2025</td><td>08</td><td>ユーネットシステムズ　退社</td></tr>
       <tr><td>2025</td><td>11</td><td>ハーモニーレンタカー　入社（バックエンド開発者）</td></tr>
@@ -270,8 +265,8 @@
         <th class="m">月</th>
         <th>免許・資格</th>
       </tr>
-      <tr><td>　</td><td>　</td><td>COS PRO JAVA 2級</td></tr>
-      <tr><td>　</td><td>　</td><td>コンピュータ活用能力検定 2級</td></tr>
+      <tr><td>2021</td><td>11</td><td>COS PRO JAVA 2級</td></tr>
+      <tr><td>2017</td><td>03</td><td>コンピュータ活用能力検定 2級</td></tr>
       <tr><td>　</td><td>　</td><td>　</td></tr>
       <tr><td>　</td><td>　</td><td>　</td></tr>
     </table>
@@ -285,7 +280,6 @@
       <tr>
         <td colspan="3" class="wish">
           貴社の規定に従います。<br /><br />
-          バックエンド開発・保守、障害対応、既存システムの移行・安定化に携わりたいと考えています。<br /><br />
           <span class="sub">メール：c20950308@gmail.com</span>
         </td>
       </tr>
