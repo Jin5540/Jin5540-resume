@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>履歴書 | イ・イェジン</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --border: #000;
+      --cell-pad: 4px 6px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", "MS Gothic", "Yu Gothic", Meiryo, sans-serif;
+      font-size: 10.5px;
+      line-height: 1.4;
+      color: #000;
+      background: #ddd;
+    }
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 12px;
+      padding: 10mm 12mm;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,.12);
+    }
+    .sheet.page-1 { page-break-after: always; }
+    .head-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-indent: 0.28em;
+    }
+    .as-of {
+      font-size: 10.5px;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+    }
+    .mark { font-weight: 700; }
+    table.form {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .form th, .form td {
+      border: 1px solid var(--border);
+      padding: var(--cell-pad);
+      vertical-align: middle;
+      word-break: break-word;
+    }
+    .form th {
+      font-weight: 500;
+      text-align: center;
+      background: #fff;
+      width: 11%;
+    }
+    .form td.lbl { width: 10%; text-align: center; font-weight: 500; }
+    /* 写真：縦4cm×横3cm */
+    .photo-cell {
+      width: 32mm;
+      padding: 4px !important;
+      vertical-align: top;
+      text-align: center;
+    }
+    .photo-box {
+      width: 30mm;
+      height: 40mm;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      font-size: 8.5px;
+      line-height: 1.35;
+      padding: 3px;
+    }
+    .photo-box .hint {
+      margin-top: 4px;
+      font-size: 7.5px;
+      text-align: left;
+      align-self: stretch;
+    }
+    .seal {
+      text-align: center;
+      white-space: nowrap;
+      font-size: 10px;
+      width: 14%;
+    }
+    .sub { font-size: 8.5px; color: #222; }
+    .section-cap {
+      text-align: center;
+      font-weight: 700;
+      font-size: 11px;
+      padding: 5px;
+    }
+    .hist {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      margin-top: 8px;
+    }
+    .hist th, .hist td {
+      border: 1px solid var(--border);
+      padding: 2px 4px;
+      vertical-align: middle;
+    }
+    .hist .cap-row th {
+      font-weight: 700;
+      font-size: 10px;
+    }
+    .hist th {
+      text-align: center;
+      font-weight: 500;
+      background: #fff;
+    }
+    .hist .y { width: 11%; }
+    .hist .m { width: 9%; }
+    .wish {
+      min-height: 42mm;
+      vertical-align: top;
+      padding: 6px !important;
+    }
+    .footer-grid th { width: 18%; }
+    .note-line {
+      font-size: 8.5px;
+      border: 1px solid var(--border);
+      border-top: none;
+      padding: 3px 6px;
+      margin: 0;
+    }
+    .screen-only { margin: 12px auto; max-width: 210mm; text-align: center; font-size: 12px; color: #333; }
+    .screen-only a { color: #1d4ed8; }
+
+    @page { size: A4; margin: 10mm; }
+    @media print {
+      body { background: #fff; }
+      .sheet {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+      }
+      .screen-only { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <p class="screen-only">国文様式に近い欄構成です（<a href="index-ja.html">日本語プロフィール</a>）。印刷で2枚に分かれます。</p>
+
+  <!-- ========== 1ページ目 ========== -->
+  <div class="sheet page-1">
+    <div class="head-row">
+      <h1>履歴書</h1>
+      <div class="as-of">令和　8　年　4　月　13　日　現在</div>
+    </div>
+
+    <table class="form" aria-label="基本情報">
+      <colgroup>
+        <col /><col /><col /><col /><col /><col style="width:32mm" />
+      </colgroup>
+      <tr>
+        <th>ふりがな</th>
+        <td colspan="4">い・いぇじん</td>
+        <td rowspan="6" class="photo-cell">
+          <div class="photo-box" role="img" aria-label="写真貼付位置">
+            <div>写真を貼る位置</div>
+            <div class="hint">縦4cm×横3cmの写真を使用してください。</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>氏名</th>
+        <td colspan="3" style="font-size:12px;font-weight:700;">イ・イェジン</td>
+        <td class="seal">○　印</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="padding:6px 8px;">
+          <span class="mark">平成7年10月27日生</span><span class="sub">（満30歳）</span>
+          <span style="margin-left:1.5em" class="sub">性別　男（　）　女（○）</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="lbl">ふりがな</td>
+        <td colspan="3" class="sub">だいかんみんこく　そうるとくべつし　こうせいく　よむちゃんどう</td>
+        <td class="lbl" style="width:8%">TEL.</td>
+      </tr>
+      <tr>
+        <th>現住所</th>
+        <td colspan="4">
+          <div class="sub">〒　　　　－　　　　<span style="float:right">携帯　</span></div>
+          <div style="min-height:14px">大韓民国　ソウル特別市　江西区　ヨムチャンドン</div>
+          <div class="sub">FAX.</div>
+          <div style="min-height:12px">　</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="lbl">ふりがな</td>
+        <td colspan="3">　</td>
+        <td class="lbl">TEL.</td>
+      </tr>
+      <tr>
+        <th>連絡先</th>
+        <td colspan="4">
+          <div class="sub">〒　　　　－　　　　（現住所以外に連絡を必要とする場合のみ記入）</div>
+          <div style="min-height:14px">　</div>
+          <div class="sub">FAX.</div>
+          <div style="min-height:12px">　</div>
+        </td>
+      </tr>
+    </table>
+
+    <table class="hist" aria-label="学歴・職歴（1ページ目）">
+      <tr class="cap-row">
+        <th class="y">年</th>
+        <th class="m">月</th>
+        <th>学歴・職歴（各別にまとめて書く）</th>
+      </tr>
+      <tr><td>2014</td><td>03</td><td>順天郷大学　警察行政学科　入学</td></tr>
+      <tr><td>2019</td><td>02</td><td>順天郷大学　警察行政学科　卒業</td></tr>
+      <tr><td>2021</td><td>06</td><td>JSL人材開発院　ハイブリッドSWコース　入学</td></tr>
+      <tr><td>2022</td><td>02</td><td>JSL人材開発院　ハイブリッドSWコース　修了</td></tr>
+      <tr><td>2022</td><td>06</td><td>ニアラボ　入社（バックエンド・フロントエンド）</td></tr>
+      <tr><td>2023</td><td>02</td><td>ニアラボ　退社</td></tr>
+      <tr><td>2023</td><td>03</td><td>日本　ワーキングホリデー滞在</td></tr>
+      <tr><td>2023</td><td>10</td><td>日本　ワーキングホリデー　終了</td></tr>
+      <tr><td>2024</td><td>05</td><td>サイドプロジェクト：ワグルワグル（Android・サーバー）着手</td></tr>
+      <tr><td>2024</td><td>10</td><td>ユーネットシステムズ　入社（バックエンド開発者）</td></tr>
+      <tr><td>2025</td><td>08</td><td>ユーネットシステムズ　退社</td></tr>
+      <tr><td>2025</td><td>11</td><td>ハーモニーレンタカー　入社（バックエンド開発者）</td></tr>
+      <tr><td>　</td><td>現在</td><td>ハーモニーレンタカー　在籍中</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+    </table>
+  </div>
+
+  <!-- ========== 2ページ目 ========== -->
+  <div class="sheet page-2">
+    <table class="hist" aria-label="学歴・職歴（続き・空欄）">
+      <tr class="cap-row">
+        <th class="y">年</th>
+        <th class="m">月</th>
+        <th>学歴・職歴（各別にまとめて書く）</th>
+      </tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+    </table>
+
+    <table class="hist" style="margin-top:10px" aria-label="免許・資格">
+      <tr class="cap-row">
+        <th class="y">年</th>
+        <th class="m">月</th>
+        <th>免許・資格</th>
+      </tr>
+      <tr><td>　</td><td>　</td><td>COS PRO JAVA 2級</td></tr>
+      <tr><td>　</td><td>　</td><td>コンピュータ活用能力検定 2級</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+      <tr><td>　</td><td>　</td><td>　</td></tr>
+    </table>
+
+    <table class="hist" style="margin-top:10px" aria-label="本人希望">
+      <tr>
+        <td colspan="3" class="section-cap" style="text-align:left;padding-left:8px;font-weight:500;">
+          本人希望記入欄（特に給料、職種、勤務時間、勤務地、その他についての希望などがあれば記入）
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" class="wish">
+          貴社の規定に従います。<br /><br />
+          バックエンド開発・保守、障害対応、既存システムの移行・安定化に携わりたいと考えています。<br /><br />
+          <span class="sub">メール：c20950308@gmail.com</span>
+        </td>
+      </tr>
+    </table>
+
+    <table class="hist footer-grid" style="margin-top:10px" aria-label="通勤・家族">
+      <colgroup><col style="width:18%" /><col style="width:32%" /><col style="width:22%" /><col style="width:28%" /></colgroup>
+      <tr>
+        <th>通勤時間</th>
+        <td colspan="3">約　　　時間　　　分</td>
+      </tr>
+      <tr>
+        <th>扶養家族<br /><span class="sub">（配偶者を除く）</span></th>
+        <td colspan="3">　　　人</td>
+      </tr>
+      <tr>
+        <th>配偶者</th>
+        <td>有　・　無　（該当に○）</td>
+        <th>配偶者の扶養義務</th>
+        <td>有　・　無　（該当に○）</td>
+      </tr>
+    </table>
+
+    <p class="note-line">保護者（本人が未成年の場合のみ記入）</p>
+    <table class="form" style="margin-top:0;border-top:none" aria-label="保護者">
+      <tr>
+        <td class="lbl">ふりがな</td>
+        <td colspan="2">　</td>
+        <td><span class="sub">TEL.</span><div style="min-height:14px">　</div></td>
+      </tr>
+      <tr>
+        <th>氏名</th>
+        <td colspan="3">　</td>
+      </tr>
+      <tr>
+        <th>住所</th>
+        <td colspan="3">
+          <div class="sub">〒　　　　－　　　　</div>
+          <div style="min-height:16px">　</div>
+          <div class="sub">FAX.</div>
+          <div style="min-height:12px">　</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
